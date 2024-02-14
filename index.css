@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(R-P-S\ image/rpcStartBg.jpg);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    border:15px solid purple;
+    box-shadow: 0 0 5px 10px white;
+    border-radius:20px;
+    display: grid;
+    grid-template-rows: .4fr 1fr 1fr 1fr;
+    gap:1em;
+    padding:1em;
+}
+.upperNav{
+    padding: 1em;
+    text-align: center;
+    border:2px solid red;
+    border-radius: 20px;
+    width:40em;
+}
+.upperNav:hover{
+    transition: .2s;
+    box-shadow: 0 0 5px .05px black;
+}
+.gameHeading{
+    text-align: center;
+    font-size: 2em;
+    color:black;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0;
+    
+}
+.pic{
+    filter: contrast(300%);
+    margin:.1em;
+    width:8em;
+    padding:.8em;
+}
+#Rock:hover{
+    transition:.5s;
+    box-shadow: 0 0 5px .1px blue;
+    
+}
+#Paper:hover{
+    transition:.5s;
+    box-shadow: 0 0 5px .1px blue;
+
+}
+#Scissor:hover{
+    transition:.5s;
+    box-shadow: 0 0 5px .1px blue;
+
+}
+.btn{
+    border-radius: 50%;
+    border: none;
+    margin: 1.2em;
+    background-color: rgba(255, 170, 0, 0.059);
+}
+.midNav{
+    border-radius: 20px;
+    border:2px solid blue;
+    width:40em;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.midNav:hover{
+    transition: .2s;
+    background-color: rgba(165, 42, 42, 0.078);
+    box-shadow: 0 0 5px .2px black;
+}
+#result{
+    font-size: 5em;
+    color:red;
+    opacity: 100%;
+}
+ 
+#finalResult{
+    color:black;
+    font-size: 1.8em;
+}
+
+.lowerNav{
+    border-radius: 10px;
+    border:2px solid black;
+    width:15em;
+    position:absolute;
+    left:65em;
+    top:1em;
+    height:7em;
+}
+.lowerNav:hover{
+    transition: .2s;
+    box-shadow:0 0 5px .05px black;
+}
+#score{
+    margin: 0 0 .3em 0;
+    color:black;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#yourScore{
+    color:red;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#computerScore{
+    color:green;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#tieScore{
+    color:blue;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#restartBtn{
+    position: relative;
+    left:8.4em;
+    width:35%;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 19px;
+    background-color: rgba(216, 2, 2, 0.969);
+    color: white;
+}
+#restartBtn:hover{
+    transition: .2s;
+    box-shadow: 0 0 5px .4px black;
+}
+
+@media (max-width:800px){
+
+    body{
+        background-image: url(R-P-S\ image/rpcStartBg.jpg);
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container{
+        width: 97%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        border:15px solid purple;
+        box-shadow: 0 0 5px 10px white;
+        border-radius:20px;
+        display: grid;
+        grid-template-rows: .4fr 1fr 1fr 1fr;
+        gap:1em;
+        padding:1em;
+    }
+    .upperNav{
+        margin:1.5em 0 0 0;
+        padding: 1em;
+        text-align: center;
+        border:2px solid red;
+        border-radius: 20px;
+        width:40em;
+        height: 8em;
+    }
+    .upperNav:hover{
+        transition: .2s;
+        box-shadow: 0 0 5px .05px black;
+    }
+    .gameHeading{
+        width: 400px;
+        text-align: center;
+        font-size: 2em;
+        color:black;
+        font-weight: bolder;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin:0;
+        
+    }
+    .pic{
+        filter: contrast(300%);
+        margin:.1em;
+        width:8em;
+        padding:.8em;
+    }
+    #Rock:hover{
+        transition:.5s;
+        box-shadow: 0 0 5px .1px blue;
+        
+    }
+    #Paper:hover{
+        transition:.5s;
+        box-shadow: 0 0 5px .1px blue;
+    
+    }
+    #Scissor:hover{
+        transition:.5s;
+        box-shadow: 0 0 5px .1px blue;
+    
+    }
+    .btn{
+        border-radius: 50%;
+        border: none;
+        position: relative;
+        bottom: 2em;
+        background-color: rgba(255, 170, 0, 0.059);
+    }
+    .midNav{
+        border-radius: 20px;
+        border:2px solid blue;
+        width:40em;
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .midNav:hover{
+        transition: .2s;
+        background-color: rgba(165, 42, 42, 0.078);
+        box-shadow: 0 0 5px .2px black;
+    }
+    #result{
+        font-size: 5em;
+        color:red;
+        opacity: 100%;
+    }
+     
+    #finalResult{
+        color:black;
+        font-size: 1.8em;
+    }
+    
+    .lowerNav{
+        border-radius: 10px;
+        border:2px solid black;
+        width:15em;
+        position:absolute;
+        left:31.5em;
+        top:1em;
+        height:7em;
+    }
+    .lowerNav:hover{
+        transition: .2s;
+        box-shadow:0 0 5px .05px black;
+    }
+    #score{
+        margin: 0 0 .3em 0;
+        color:black;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    #yourScore{
+        color:red;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    #computerScore{
+        color:green;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    #tieScore{
+        color:blue;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    #restartBtn{
+        padding: 0;
+        position: relative;
+        left:8.4em;
+        top:1em;
+        height: 3em; 
+        font-size: 1.5em;
+        border: none;
+        border-radius: 19px;
+        background-color: rgba(216, 2, 2, 0.969);
+        color: white;
+    }
+    #restartBtn:hover{
+        transition: .2s;
+        box-shadow: 0 0 5px .4px black;
+    }
+
+}
